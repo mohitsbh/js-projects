@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="header">
+          <input
+            class="input"
+            type="text"
+            placeholder="Enter city Name..."
+            spellcheck="false"
+          />
+          <button class="btn"><img src="./images/search.png" alt="" /></button>
+        </div>
+        <div class="error">
+            <p>Invalid City Name</p>
+        </div>
+
+        <!-- Weather Info -->
+        <div class="weather">
+          <div class="details">
+            <div class="cloudy">
+              <img
+                width="130px"
+                class='weather_png'
+                src="./images/clouds.png"
+                alt=""
+              />
+              <h2 class="temp">22&deg;C</h2>
+              <h4 class="city">New York</h4>
+            </div>
+          </div>
+          <div class="wind-humidity">
+            <div class="humidity">
+              <img
+                width="35px"
+                class="humidity-png"
+                src="./images/humidity.png"
+                alt=""
+              />
+              <div class="humidity-info">
+                <p class="humidity-per">54%</p>
+                <p class="humidity_label">Humidity</p>
+              </div>
+            </div>
+
+            <div class="wind">
+              <img
+                width="35px"
+                class="wind-png"
+                src="./images/wind.png"
+                alt=""
+              />
+              <div class="wind-info">
+                <p class="wind-per">16 km/hr</p>
+                <p class="wind_label">Wind Speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="weather.js"></script>
+
+  </body>
+</html>

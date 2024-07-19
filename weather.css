@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background: linear-gradient(90deg, purple, red);
+}
+
+.main {
+  padding: 10px;
+  border: 1px solid white;
+  max-width: 380px;
+  width: 90%;
+  margin: 100px;
+  border-radius: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header input {
+  margin: 10px;
+  padding-left: 15px;
+  width: 250px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.288);
+  border-radius: 30px;
+  color: white;
+}
+
+.header input::placeholder {
+  color: white;
+}
+.header button {
+  text-align: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.header button img {
+  width: 15px;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+}
+
+.weather .details {
+  margin-bottom: 25px;
+}
+
+.wind-humidity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wind-humidity .humidity {
+  display: flex;
+  margin-left: 10px;
+  gap: 10px;
+}
+
+.wind {
+  display: flex;
+  margin-right: 10px;
+  gap: 10px;
+}
+
+.weather {
+  display: none;
+}
+
+.error {
+  font-size: 14px;
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  display: none;
+}
